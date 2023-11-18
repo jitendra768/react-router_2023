@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
@@ -10,6 +9,8 @@ import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
 import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 import LoginPage from './components/Login/LoginPage.jsx'
+import RenderList from './components/Topics/RenderList/RenderList.jsx'
+import App from './App.jsx'
 
 
 // 1. define route 
@@ -46,6 +47,8 @@ const router = createBrowserRouter(
        <Route path='contact' element={<Contact/>}/>
        <Route path='user/:userId' element={<User/>}/>
        <Route  loader={githubInfoLoader} path='github' element={<Github/>}/>
+       <Route path='renderList' element={<RenderList/>}/>
+       <Route path='context' element={<App/>}/>
     </Route>
   )
 )
