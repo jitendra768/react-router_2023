@@ -11,6 +11,7 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 import LoginPage from './components/Login/LoginPage.jsx'
 import RenderList from './components/Topics/RenderList/RenderList.jsx'
 import App from './App.jsx'
+import Event from './components/Events/Event.jsx'
 
 
 // 1. define route 
@@ -49,6 +50,7 @@ const router = createBrowserRouter(
        <Route  loader={githubInfoLoader} path='github' element={<Github/>}/>
        <Route path='renderList' element={<RenderList/>}/>
        <Route path='context' element={<App/>}/>
+       <Route path='event' element={<Event/>}/>
     </Route>
   )
 )
