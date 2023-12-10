@@ -12,6 +12,10 @@ import LoginPage from './components/Login/LoginPage.jsx'
 import RenderList from './components/Topics/RenderList/RenderList.jsx'
 import App from './App.jsx'
 import Event from './components/Events/Event.jsx'
+import State from './components/Hooks/UseState/State.jsx'
+import UseState from './components/Hooks/UseState/useState.jsx'
+import UseEffectHooks from './components/Hooks/UseEffectHooks.jsx'
+import UseRefHook from './components/Hooks/UseRefHook.jsx'
 
 
 // 1. define route 
@@ -51,6 +55,10 @@ const router = createBrowserRouter(
        <Route path='renderList' element={<RenderList/>}/>
        <Route path='context' element={<App/>}/>
        <Route path='event' element={<Event/>}/>
+       <Route path='state' element={<State/>}/>
+       <Route path='useState' element={<UseState/>}/>
+       <Route path='useEffect' element={<UseEffectHooks/>}/>
+       <Route path='useRef' element={<UseRefHook/>}/>
     </Route>
   )
 )
