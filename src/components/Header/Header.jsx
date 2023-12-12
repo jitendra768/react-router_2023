@@ -90,6 +90,19 @@ export default function Header() {
                   Github
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to={"hookCard"}
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Hooks
+                </NavLink>
+              </li>
 
               <Menu as="div" className="relative inline-block text-left">
                 <div>
@@ -203,6 +216,71 @@ export default function Header() {
                           }
                         >
                           UseRefHook
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"useMemo"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                          UseMemoHooks
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"propDrilling"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                          PropDriling
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"context1"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                          Context Api
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"useContext"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                          UseCOntext Hooks
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"callback"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                          UseCallback Hooks
                         </NavLink>
                       </Menu.Item>
                       <form method="POST" action="#">
