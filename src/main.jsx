@@ -26,6 +26,11 @@ import Parent from "./components/Hooks/PropDrilling/Parent.jsx";
 import Parent1 from "./components/Hooks/ContextApi/Parent1.jsx";
 import Parent2 from "./components/Hooks/UseContext/Parent2.jsx";
 import UseCallback from "./components/Hooks/UseCallback/UseCallback.jsx";
+import ControlComponents from "./components/ControledUncontroled/ControlComponents.jsx";
+import Uncontroled from "./components/ControledUncontroled/Uncontroled.jsx";
+import ParentLift from "./components/LiftingUpState/ParentLift.jsx";
+import Registration from "./components/RegistrationForm/Registration.jsx";
+import UseStateWithObject from "./components/Hooks/UseState/UseStateWithObject.jsx";
 
 // 1. define route
 
@@ -73,6 +78,11 @@ const router = createBrowserRouter(
       <Route path="context1" element={<Parent1 />} />
       <Route path="useContext" element={<Parent2 />} />
       <Route path="callback" element={<UseCallback />} />
+      <Route path="control" element={<ControlComponents />} />
+      <Route path="uncontrol" element={<Uncontroled />} />
+      <Route path="liftingState" element={<ParentLift />} />
+      <Route path="register" element={<Registration />} />
+      <Route path="usestatewithobject" element={<UseStateWithObject />} />
     </Route>
   )
 );

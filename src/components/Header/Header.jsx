@@ -92,7 +92,7 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to={"hookCard"}
+                  to={"register"}
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
@@ -100,7 +100,20 @@ export default function Header() {
                      border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  Hooks
+                  Registration
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"usestatewithobject"}
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  UseState with Object
                 </NavLink>
               </li>
 
@@ -281,6 +294,46 @@ export default function Header() {
                           }
                         >
                           UseCallback Hooks
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"control"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                          controled components
+                        </NavLink>
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        <NavLink
+                          to={"uncontrol"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                        uncontroled components
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"liftingState"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                        Liftingup State
                         </NavLink>
                       </Menu.Item>
                       <form method="POST" action="#">
