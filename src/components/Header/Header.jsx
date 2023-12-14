@@ -116,6 +116,19 @@ export default function Header() {
                   UseState with Object
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to={"customHook"}
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Custom Hooks
+                </NavLink>
+              </li>
 
               <Menu as="div" className="relative inline-block text-left">
                 <div>
@@ -334,6 +347,19 @@ export default function Header() {
                           }
                         >
                         Liftingup State
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"usereducer"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                        usereducers
                         </NavLink>
                       </Menu.Item>
                       <form method="POST" action="#">

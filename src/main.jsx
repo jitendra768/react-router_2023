@@ -31,6 +31,8 @@ import Uncontroled from "./components/ControledUncontroled/Uncontroled.jsx";
 import ParentLift from "./components/LiftingUpState/ParentLift.jsx";
 import Registration from "./components/RegistrationForm/Registration.jsx";
 import UseStateWithObject from "./components/Hooks/UseState/UseStateWithObject.jsx";
+import UserReducers from "./components/Hooks/UserReducers.jsx";
+import CustomHooks from "./components/Hooks/CustomHooks/CustomHooks.jsx";
 
 // 1. define route
 
@@ -83,6 +85,8 @@ const router = createBrowserRouter(
       <Route path="liftingState" element={<ParentLift />} />
       <Route path="register" element={<Registration />} />
       <Route path="usestatewithobject" element={<UseStateWithObject />} />
+      <Route path="usereducer" element={<UserReducers />} />
+      <Route path="customHook" element={<CustomHooks />} />
     </Route>
   )
 );
