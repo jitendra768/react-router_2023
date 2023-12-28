@@ -20,6 +20,7 @@ const UseMemo = () => {
     },
     [count]
   );
+
   return (
     <div className="m-5">
       {multiplication}

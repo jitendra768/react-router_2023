@@ -105,6 +105,19 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
+                  to={"event"}
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Responding to Events
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to={"usestatewithobject"}
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
@@ -127,6 +140,19 @@ export default function Header() {
                   }
                 >
                   Custom Hooks
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"statevariable"}
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Adding State Variable
                 </NavLink>
               </li>
 
@@ -360,6 +386,32 @@ export default function Header() {
                           }
                         >
                         usereducers
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"useLayout"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                        useLayout Effect
+                        </NavLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <NavLink
+                          to={"arrayRender"}
+                          className={({ isActive }) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${
+                              isActive ? "text-orange-700" : "text-gray-700"
+                            } border-b
+                     border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                          }
+                        >
+                        Array list
                         </NavLink>
                       </Menu.Item>
                       <form method="POST" action="#">

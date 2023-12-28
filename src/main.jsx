@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import {
@@ -33,6 +32,9 @@ import Registration from "./components/RegistrationForm/Registration.jsx";
 import UseStateWithObject from "./components/Hooks/UseState/UseStateWithObject.jsx";
 import UserReducers from "./components/Hooks/UserReducers.jsx";
 import CustomHooks from "./components/Hooks/CustomHooks/CustomHooks.jsx";
+import UseLayoutEffect from "./components/Hooks/UseLayoutEffect.jsx";
+import EventHandler from "./components/AddingIntractivity/EventHandler.jsx";
+import AddingStateVariable from "./components/AddingIntractivity/AddingStateVariable.jsx";
 
 // 1. define route
 
@@ -87,11 +89,14 @@ const router = createBrowserRouter(
       <Route path="usestatewithobject" element={<UseStateWithObject />} />
       <Route path="usereducer" element={<UserReducers />} />
       <Route path="customHook" element={<CustomHooks />} />
+      <Route path="useLayout" element={<UseLayoutEffect />} />
+      <Route path="event" element={<EventHandler />} />
+      <Route path="statevariable" element={<AddingStateVariable/>} />
     </Route>
   )
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  // </React.StrictMode>
 );

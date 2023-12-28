@@ -1,6 +1,6 @@
 const Event = () => {
   const handleClick = () => {
-    alert("Hello Arti");
+    alert("Hello Hero");
   };
   return (
     <div>
