@@ -35,6 +35,7 @@ import CustomHooks from "./components/Hooks/CustomHooks/CustomHooks.jsx";
 import UseLayoutEffect from "./components/Hooks/UseLayoutEffect.jsx";
 import EventHandler from "./components/AddingIntractivity/EventHandler.jsx";
 import AddingStateVariable from "./components/AddingIntractivity/AddingStateVariable.jsx";
+import StarRating from "./components/StarRating/StarRating.jsx";
 
 // 1. define route
 
@@ -92,6 +93,7 @@ const router = createBrowserRouter(
       <Route path="useLayout" element={<UseLayoutEffect />} />
       <Route path="event" element={<EventHandler />} />
       <Route path="statevariable" element={<AddingStateVariable/>} />
+      <Route path="starrating" element={<StarRating/>} />
     </Route>
   )
 );
